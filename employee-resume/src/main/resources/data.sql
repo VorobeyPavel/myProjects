@@ -1,0 +1,10 @@
+INSERT INTO public.employees (employee_name, surname, department, salary) VALUES ('Anna', 'Boloshova', 'Salary', 755);
+INSERT INTO public.employees (employee_name, surname, department, salary) VALUES ('Maksim', 'Avdeichik', 'IT', 890);
+INSERT INTO public.employees (employee_name, surname, department, salary) VALUES ('Oleg', 'Nisht', 'Salary', 1100);
+insert into public.employees (employee_name, surname, department, salary) VALUES ('Alex', 'Antonov', 'HR', 800);
+INSERT INTO public.employees (employee_name, surname, department, salary) VALUES ('Anton', 'Mironov', 'IT', 950);
+INSERT INTO public.employees (employee_name, surname, department, salary) VALUES ('Pavel', 'Vorobey', 'IT', 900);
+INSERT INTO public.employees (employee_name, surname, department, salary) VALUES ('Sveta', 'Rusetscay', 'HR', 1050);
+INSERT INTO public.employees (employee_name, surname, department, salary) VALUES ('Dima', 'Steshko', 'Salary', 1200);
+INSERT INTO public.employees (employee_name, surname, department, salary) VALUES ('Zaur', 'Tregulov', 'IT', 1000);
+INSERT INTO public.employees (employee_name, surname, department, salary) VALUES ('Anna', 'Mironova', 'HR', 900);

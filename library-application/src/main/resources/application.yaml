@@ -1,0 +1,55 @@
+spring:
+  profiles:
+    active: prod
+
+
+---
+server:
+  port: 8000
+spring:
+  config:
+    activate:
+      on-profile: test
+    name: test-YAML
+  jpa:
+    database: h2
+    show-sql: true
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    url: jdbc:h2:mem:resumes
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+  sql:
+    init:
+      platform: org.hibernate.dialect.H2Dialect
+
+---
+server:
+  port: 8088
+spring:
+  config:
+    activate:
+      on-profile: prod
+  jpa:
+    database: postgresql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:5432/intervale?useSSL=false&amp;serverTimezone=UTC
+    username: postgres
+    password: postgres
+    driverClassName: org.postgresql.Driver
+  h2:
+    console:
+      enabled: true
+  sql:
+    init:
+      platform: org.hibernate.dialect.PostgreSQL95Dialect
+

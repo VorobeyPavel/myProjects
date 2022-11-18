@@ -1,0 +1,16 @@
+spring:
+  main:
+    banner-mode: "off"
+
+  application:
+
+    name: demo-app
+  profiles:
+    active: development
+  config:
+    import: 'optional:configserver:'
+  cloud:
+    config:
+      uri: http://localhost:8888/
+      enabled: true
+      failFast: true

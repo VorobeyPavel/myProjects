@@ -1,0 +1,15 @@
+spring:
+  main:
+    banner-mode: "on"
+  datasource:
+    url: ${POSTGRES_DB:jdbc:postgresql://localhost:5432/clevertec}
+    username: ${POSTGRES_USER:postgres}
+    password: ${POSTGRES_PASSWORD:postgres}
+    hikari:
+      maximum-pool-size: 8
+      connection-timeout: 55000
+
+
+  application:
+   admin:
+    enabled: true

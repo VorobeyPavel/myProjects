@@ -1,0 +1,6 @@
+com.example.employee_resume
+com.example.employee_resume.aspects
+com.example.employee_resume.controller
+com.example.employee_resume.dao
+com.example.employee_resume.entity
+com.example.employee_resume.service
